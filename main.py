@@ -66,4 +66,9 @@ def find_day(day, month, year):
 
 
 if __name__ == "__main__":
-    print(find_day(12, 12, 2012))
+    userinput = input("Enter the date in the format (dd-mm-yyyy): ")
+    userinput_splitted = userinput.split("-")
+    day = int(userinput_splitted[0])
+    month = int(userinput_splitted[1])
+    year = int(userinput_splitted[2])
+    print(find_day(day, month, year))
